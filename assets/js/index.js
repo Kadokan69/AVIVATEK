@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const nav = document.getElementById("nav-menu");
   const cross = document.getElementById("cross-menu");
   const overlay = document.getElementById("menu-overlay");
+  const sublist = document.querySelector(".nav__sublist");
+  const dropdown = document.querySelector(".nav__dropdown");
 
   function openMenu() {
     nav.classList.add("open");
@@ -14,6 +16,14 @@ document.addEventListener("DOMContentLoaded", function () {
     burger.classList.remove("active");
     overlay.classList.remove("open");
   }
+
+
+  dropdown.addEventListener('mouseenter', function () {
+    sublist.classList.add("active");
+  });
+  dropdown.addEventListener('mouseleave', function () {
+    sublist.classList.remove("active");
+  });
 
   burger.addEventListener("click", function (e) {
     e.stopPropagation();

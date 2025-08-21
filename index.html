@@ -14,30 +14,55 @@
   <body>
     <div class="overlay" id="menu-overlay"></div>
     <header>
-      <div class="header__wrapper">
-        <div class="header__info">
-          <a href="#" class="header__logo">AVIVATEK</a>
-          <a href="#" class="header__phone">+7 999 123 45 67</a>
-        </div>
-
-        <button class="burger" id="burger-menu" aria-label="Открыть меню">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-        <div class="menu" id="nav-menu">
-          <button class="cross" id="cross-menu" aria-label="Закрыть меню">
+      <div class="header__wrapper-info">
+        <div class="header__wrapper">
+          <div class="header__info">
+            <div class="header__logo">
+              <a href="#" class="header__title">AVIVATEK</a>
+              <p class="header__description">монтаж слаботочных систем</p>
+            </div>
+            
+            <div class="header__contact">
+              <a href="#" class="header__mail">info@avivatek.ru</a>
+              <a href="#" class="header__phone">+7 999 123 45 67</a>
+            </div>
+            
+          </div>
+          <button class="burger" id="burger-menu" aria-label="Открыть меню">
+            <span></span>
             <span></span>
             <span></span>
           </button>
-          <nav class="nav">
-            <ul>
-              <li><a href="#about">О нас</a></li>
-              <li><a href="#services">Услуги</a></li>
-              <li><a href="#contact">Контакты</a></li>
-            </ul>
-          </nav>
+        </div>
+      </div>
+      <div class="header__wrapper-nav">
+        <div class="header__wrapper">
+          <div class="menu" id="nav-menu">
+            <button class="cross" id="cross-menu" aria-label="Закрыть меню">
+              <span></span>
+              <span></span>
+            </button>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item nav__dropdown">
+                  <a href="#home" class="nav__link nav__dropdown-link">Услуги</a>
+                  <div class="nav__dropdown-menu">
+                    <ul class="nav__sublist">
+                      <li class="nav__subitem"><a href="#about">О нас</a></li>
+                      <li class="nav__subitem"><a href="#services">Услуги</a></li>
+                      <li class="nav__subitem"><a href="#contact">Контакты</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav__item"><a href="#about">О нас</a></li>
+                <li class="nav__item"><a href="#services">Услуги</a></li>
+                <li class="nav__item"><a href="#contact">Контакты</a></li>
+                <li class="nav__item"><a href="#about">О нас</a></li>
+                <li class="nav__item"><a href="#services">Услуги</a></li>
+                <li class="nav__item"><a href="#contact">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
@@ -201,7 +226,7 @@
             </div>
           </div>
           <div class="guarantee__img">
-            <img src="/assets/img/garantii_dogovor.webp" alt="">
+            <img src="/assets/img/garantii_dogovor.webp" alt="" />
           </div>
         </div>
       </section>
@@ -281,15 +306,15 @@
       </section>
       <section>
         <div class="stepwork">
-          <div class="stepwork__info">
-            <h2 class="stepwork__title">Этапы работы</h2>
-            <p class="stepwork__text">Отлаженный порядок работы, проверенный на более 700 заказах:</p>
-            <p class="stepwork__descripion">
-              Выполняем монтаж слаботочных систем в строгом соответствии с правилами безопасности и регламентирующими
-              нормативными документами
-            </p>
-          </div>
           <div class="stepwork__items">
+            <div class="stepwork__info">
+              <h2 class="stepwork__title">Этапы работы</h2>
+              <p class="stepwork__text">Отлаженный порядок работы, <span>проверенный на более 700 заказах:</span></p>
+              <p class="stepwork__descripion">
+                Выполняем монтаж слаботочных систем в строгом соответствии с правилами безопасности и регламентирующими
+                нормативными документами
+              </p>
+            </div>
             <div class="stepwork__item">
               <span class="stepwork__number">1</span>
               <div class="stepwork__item-img">
@@ -403,7 +428,6 @@
                 </div>
                 <div class="contacts__block-green"></div>
               </li>
-              
             </ul>
             <div class="contacts__form">
               <div class="contacts__form-info">
@@ -492,7 +516,7 @@
         var owl = $(".owl-carousel");
         owl.parent().parent().css("max-width", "100%");
         owl.owlCarousel({
-          loop: true,
+          loop: false,
           nav: true,
           dots: false,
           autoWidth: true,
@@ -508,10 +532,10 @@
               items: 3,
             },
             960: {
-              items: 5,
+              items: 3,
             },
             1200: {
-              items: 6,
+              items: 3,
             },
           },
         });
