@@ -2172,6 +2172,7 @@ footer {
   }
   .guarantee {
     position: relative;
+    margin-bottom: 60px;
   }
   .guarantee__img {
     position: absolute;

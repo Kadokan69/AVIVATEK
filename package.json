@@ -1,0 +1,22 @@
+{
+  "browserslist": [
+    "> 1%",
+    "last 3 versions",
+    "IE >= 9",
+    "not dead"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.1.1",
+    "esbuild": "^0.25.9",
+    "gulp-postcss": "^10.0.0",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "postcss-import": "^16.1.1"
+  },
+  "scripts": {
+    "minify:css": "postcss assets/css/main.css -o assets/css/style.min.css",
+    "minify:js": "esbuild assets/js/main.js --bundle --minify --sourcemap --outfile=assets/js/index.min.js --target=es2015",
+    "minify": "npm run minify:css && npm run minify:js"
+  }
+}

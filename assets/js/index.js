@@ -1,11 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {
+export function mainJs() {
   const burger = document.getElementById("burger-menu");
   const nav = document.getElementById("nav-menu");
   const cross = document.getElementById("cross-menu");
   const overlay = document.getElementById("menu-overlay");
   const sublist = document.querySelector(".nav__sublist");
   const dropdown = document.querySelector(".nav__dropdown");
-  const carusel = document.querySelector(".owl-stage");
 
   function openMenu() {
     nav.classList.add("open");
@@ -18,11 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
     overlay.classList.remove("open");
   }
 
-
-  dropdown.addEventListener('mouseenter', function () {
+  dropdown.addEventListener("mouseenter", function () {
     sublist.classList.add("active");
   });
-  dropdown.addEventListener('mouseleave', function () {
+  dropdown.addEventListener("mouseleave", function () {
     sublist.classList.remove("active");
   });
 
@@ -61,5 +59,4 @@ document.addEventListener("DOMContentLoaded", function () {
       }px))`;
     }
   });
-  
-});
+}

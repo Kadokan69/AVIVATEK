@@ -1,12 +1,11 @@
-document.addEventListener("DOMContentLoaded", () => {
+export function Video() {
   const videoPopupContainer = document.getElementById("video-popup");
   const popupDescription = videoPopupContainer.querySelector(".popup__description");
   const videoPlay = document.querySelector(".play-video");
- 
 
   function openPopup(e) {
     e.preventDefault();
-   
+
     // Ищем HTML-описание в карточке
     const videoItem = this.closest(".video");
     const descriptionTemplate = videoItem.querySelector(".video-content");
@@ -14,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (descriptionTemplate) {
       // Используем innerHTML для поддержки HTML-разметки
       popupDescription.innerHTML = descriptionTemplate.innerHTML;
-    } 
+    }
     videoPopupContainer.classList.add("active");
     document.body.style.overflow = "hidden";
   }
@@ -26,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
     popupDescription.innerHTML = "";
   }
 
-
   videoPlay.addEventListener("click", openPopup);
 
   videoPopupContainer.addEventListener("click", (e) => {
@@ -37,4 +35,4 @@ document.addEventListener("DOMContentLoaded", () => {
       closePopup();
     }
   });
-});
+}

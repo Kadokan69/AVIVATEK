@@ -5,11 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Avivatek</title>
-    <link rel="stylesheet" href="assets/css/resert.css" />
-    <link rel="stylesheet" href="assets/css/fonts.css" />
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
   </head>
   <body>
     <div class="overlay" id="menu-overlay"></div>
@@ -241,7 +239,7 @@
         <div class="video">
           <div class="video__wrapper">
             <div class="play-video">
-              <a href="#" class="play-video__link "></a>
+              <a href="#" class="play-video__link"></a>
               <span class="play-video__icon"></span>
               <span class="play-video__icon"></span>
               <span class="play-video__icon"></span>
@@ -539,7 +537,7 @@
               ><a href="#">+7 (495) 183-01-13</a>
             </li>
             <li class="footer__contacts-item">
-              <span class="footer__contacts-icon "><img src="/assets/img/mail_gray.svg" alt="" /></span
+              <span class="footer__contacts-icon"><img src="/assets/img/mail_gray.svg" alt="" /></span
               ><a href="#" class="footer__mail">info@avivatek.ru</a>
             </li>
             <li class="footer__contacts-item">
@@ -597,14 +595,11 @@
         </div>
       </div>
     </footer>
-    <script src="assets/js/index.js"></script>
+    <script src="assets/js/index.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/modal.js"></script>
-    <script src="assets/js/portfolio.js"></script>
-    <script src="assets/js/videoPopup.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
+    <script  src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/masky.min.js"></script>
-    <script>
+    <script type="text/javascript">
       $(document).ready(function () {
         var owl = $(".owl-carousel");
         owl.parent().parent().css("max-width", "100%");
@@ -646,28 +641,29 @@
     </script>
     <script>
       $(document).ready(function () {
-        document.querySelectorAll('.anchor-link').forEach(link => {
-          link.addEventListener('click', function(e) {
+        document.querySelectorAll(".anchor-link").forEach((link) => {
+          link.addEventListener("click", function (e) {
             e.preventDefault();
 
-            const targetId = this.getAttribute('href');
+            const targetId = this.getAttribute("href");
             const targetElement = document.querySelector(targetId);
 
             if (targetElement) {
-              const headerHeight = document.querySelector('header').offsetHeight;
+              const headerHeight = document.querySelector("header").offsetHeight;
               const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
               const offsetPosition = targetPosition - headerHeight - 20; // Дополнительный отступ 20px
-      
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
+
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth",
+              });
+
+              // Обновляем URL без перезагрузки страницы
+              history.pushState(null, null, targetId);
+            }
+          });
+        });
       });
-      
-      // Обновляем URL без перезагрузки страницы
-      history.pushState(null, null, targetId);
-    }
-  });
-});});
     </script>
     <!-- Попап для портфолио -->
     <div class="popup" id="portfolio-popup">

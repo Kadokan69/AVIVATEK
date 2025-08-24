@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+export function Modal() {
   const modal = document.querySelector("#modal");
   const openModalBtn = document.querySelectorAll(".openModal");
   const closeModalBtn = document.querySelector("#closeModal");
@@ -34,4 +34,4 @@ document.addEventListener("DOMContentLoaded", function () {
     modal.style.display = "none";
     document.body.style.overflow = "auto"; // Разблокировка прокрутки
   }
-});
+}
