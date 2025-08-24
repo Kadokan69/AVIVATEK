@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const overlay = document.getElementById("menu-overlay");
   const sublist = document.querySelector(".nav__sublist");
   const dropdown = document.querySelector(".nav__dropdown");
+  const carusel = document.querySelector(".owl-stage");
 
   function openMenu() {
     nav.classList.add("open");
@@ -60,4 +61,5 @@ document.addEventListener("DOMContentLoaded", function () {
       }px))`;
     }
   });
+  
 });

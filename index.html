@@ -21,12 +21,11 @@
               <a href="#" class="header__title">AVIVATEK</a>
               <p class="header__description">монтаж слаботочных систем</p>
             </div>
-            
+
             <div class="header__contact">
               <a href="#" class="header__mail">info@avivatek.ru</a>
-              <a href="#" class="header__phone">+7 999 123 45 67</a>
+              <a href="#" class="header__phone">+7 (495) 183-01-13</a>
             </div>
-            
           </div>
           <button class="burger" id="burger-menu" aria-label="Открыть меню">
             <span></span>
@@ -45,21 +44,25 @@
             <nav class="nav">
               <ul class="nav__list">
                 <li class="nav__item nav__dropdown">
-                  <a href="#home" class="nav__link nav__dropdown-link">Услуги</a>
+                  <a href="#home" class="nav__link nav__dropdown-link">Наши услуги</a>
                   <div class="nav__dropdown-menu">
                     <ul class="nav__sublist">
-                      <li class="nav__subitem"><a href="#about">О нас</a></li>
-                      <li class="nav__subitem"><a href="#services">Услуги</a></li>
-                      <li class="nav__subitem"><a href="#contact">Контакты</a></li>
+                      <li class="nav__subitem"><a href="#">Видеонаблюдение</a></li>
+                      <li class="nav__subitem"><a href="#">Контроль доступа (СКУД)</a></li>
+                      <li class="nav__subitem"><a href="#">Структурированные кабельные сети</a></li>
+                      <li class="nav__subitem"><a href="#">Беспроводные Wi-Fi сети</a></li>
+                      <li class="nav__subitem"><a href="#">Электросети</a></li>
+                      <li class="nav__subitem"><a href="#">Системы музыкальной трансляции</a></li>
                     </ul>
                   </div>
                 </li>
-                <li class="nav__item"><a href="#about">О нас</a></li>
-                <li class="nav__item"><a href="#services">Услуги</a></li>
-                <li class="nav__item"><a href="#contact">Контакты</a></li>
-                <li class="nav__item"><a href="#about">О нас</a></li>
-                <li class="nav__item"><a href="#services">Услуги</a></li>
-                <li class="nav__item"><a href="#contact">Контакты</a></li>
+                <li class="nav__item nav__item-main"><a href="/">Главная</a></li>
+                <li class="nav__item openModal"><a href="#">Узнать стоимость</a></li>
+                <li class="nav__item"><a href="#guarantee" class="anchor-link">Гарантии</a></li>
+                <li class="nav__item"><a href="#cases" class="anchor-link">Кейсы</a></li>
+                <li class="nav__item"><a href="#licenses" class="anchor-link">Лицензии</a></li>
+                <li class="nav__item"><a href="#steps" class="anchor-link">Порядок работы</a></li>
+                <li class="nav__item"><a href="#contacts" class="anchor-link">Контакты</a></li>
               </ul>
             </nav>
           </div>
@@ -95,8 +98,12 @@
             </div>
           </div>
           <div class="hero__buttons">
-            <button class="hero__button flash">Рассчитать стоимость</button>
+            <button class="hero__button flash openModal">Рассчитать стоимость</button>
             <button class="hero__button wt-button">Написать в WhatsApp</button>
+            <div class="hero__button-arrow">
+              <span class="hero__button-arrow-img"></span>
+              <p class="hero__button-arrow-text">Узнайте стоимость работ за 3 минуты</p>
+            </div>
           </div>
           <div class="hero__image">
             <div class="hero__image-ico">
@@ -179,7 +186,7 @@
         </div>
       </section>
       <section>
-        <div class="guarantee">
+        <div class="guarantee" id="guarantee">
           <div class="guarantee__info">
             <h2 class="guarantee__title">Гарантии</h2>
             <p class="guarantee__text">
@@ -234,7 +241,7 @@
         <div class="video">
           <div class="video__wrapper">
             <div class="play-video">
-              <a href="#" class="play-video__link"></a>
+              <a href="#" class="play-video__link "></a>
               <span class="play-video__icon"></span>
               <span class="play-video__icon"></span>
               <span class="play-video__icon"></span>
@@ -246,10 +253,13 @@
             <img src="/assets/img/video_shot.webp" alt="" class="video__image" />
           </div>
           <p class="video__duration">Продолжительность видео: 1 минута 23 секунды</p>
+          <script type="text/template" class="video-content">
+            <iframe width="100%" height="540" src="https://www.youtube.com/embed/QxUA2upkIiU?si=AFyGj7Engpa9oZGf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </script>
         </div>
       </section>
       <section>
-        <div class="portfolio__gallery">
+        <div class="portfolio__gallery" id="cases">
           <div class="portfolio__info">
             <h2 class="portfolio__title">Наши кейсы</h2>
             <p class="portfolio__text">Среди наших клиентов — ведущие компании страны:</p>
@@ -260,7 +270,10 @@
                 <img src="/assets/img/logo_eldorado.svg" alt="" />
               </div>
               <div class="portfolio__image" style="background-image: url('/assets/img/case_eldorado.webp')">
-                <a href="#" class="portfolio__link">Смотреть кейс</a>
+                <a href="#" class="portfolio__link" data-portfolio-title="Торговая сеть «Эльдорадо»">Смотреть кейс</a>
+                <script type="text/template" class="portfolio-description">
+                  <div><br><strong>Объекты: </strong>60 магазинов<br><br><strong>Внедрили / Настроили:</strong><br>• Системы видеонаблюдения<br>• Системы противопожарной безопасности<br>• Система охранно-тревожной сигнализации<br>• Система контроля и управления доступом<br>• Беспроводная локальная сеть WI-FI<br>• Антикражные рамки<br>• Учет рабочего времени сотрудников<br>• Трансляция демороликов на телевизоры в торговых залах<br><br><strong>Установили в каждом магазине:</strong><br>• от 16 до 128 камер<br>• от 10 до 60 охранных датчиков<br>• от 1 до 15 км кабеля<br>• от 2 до 45 точек прохода</div>
+                </script>
               </div>
             </article>
             <article class="portfolio__item">
@@ -268,7 +281,10 @@
                 <img src="/assets/img/logo_eldorado.svg" alt="" />
               </div>
               <div class="portfolio__image" style="background-image: url('/assets/img/case_eldorado.webp')">
-                <a href="#" class="portfolio__link">Смотреть кейс</a>
+                <a href="#" class="portfolio__link" data-portfolio-title="Торговая сеть «Эльдорадо»">Смотреть кейс</a>
+                <script type="text/template" class="portfolio-description">
+                  <div><br><strong>Объекты: </strong>60 магазинов<br><br><strong>Внедрили / Настроили:</strong><br>• Системы видеонаблюдения<br>• Системы противопожарной безопасности<br>• Система охранно-тревожной сигнализации<br>• Система контроля и управления доступом<br>• Беспроводная локальная сеть WI-FI<br>• Антикражные рамки<br>• Учет рабочего времени сотрудников<br>• Трансляция демороликов на телевизоры в торговых залах<br><br><strong>Установили в каждом магазине:</strong><br>• от 16 до 128 камер<br>• от 10 до 60 охранных датчиков<br>• от 1 до 15 км кабеля<br>• от 2 до 45 точек прохода</div>
+                </script>
               </div>
             </article>
             <article class="portfolio__item">
@@ -276,14 +292,50 @@
                 <img src="/assets/img/logo_eldorado.svg" alt="" />
               </div>
               <div class="portfolio__image" style="background-image: url('/assets/img/case_eldorado.webp')">
-                <a href="#" class="portfolio__link">Смотреть кейс</a>
+                <a href="#" class="portfolio__link" data-portfolio-title="Торговая сеть «Эльдорадо»">Смотреть кейс</a>
+                <script type="text/template" class="portfolio-description">
+                  <div><br><strong>Объекты: </strong>60 магазинов<br><br><strong>Внедрили / Настроили:</strong><br>• Системы видеонаблюдения<br>• Системы противопожарной безопасности<br>• Система охранно-тревожной сигнализации<br>• Система контроля и управления доступом<br>• Беспроводная локальная сеть WI-FI<br>• Антикражные рамки<br>• Учет рабочего времени сотрудников<br>• Трансляция демороликов на телевизоры в торговых залах<br><br><strong>Установили в каждом магазине:</strong><br>• от 16 до 128 камер<br>• от 10 до 60 охранных датчиков<br>• от 1 до 15 км кабеля<br>• от 2 до 45 точек прохода</div>
+                </script>
+              </div>
+            </article>
+            <article class="portfolio__item">
+              <div class="portfolio__ico">
+                <img src="/assets/img/logo_eldorado.svg" alt="" />
+              </div>
+              <div class="portfolio__image" style="background-image: url('/assets/img/case_eldorado.webp')">
+                <a href="#" class="portfolio__link" data-portfolio-title="Торговая сеть «Эльдорадо»">Смотреть кейс</a>
+                <script type="text/template" class="portfolio-description">
+                  <div><br><strong>Объекты: </strong>60 магазинов<br><br><strong>Внедрили / Настроили:</strong><br>• Системы видеонаблюдения<br>• Системы противопожарной безопасности<br>• Система охранно-тревожной сигнализации<br>• Система контроля и управления доступом<br>• Беспроводная локальная сеть WI-FI<br>• Антикражные рамки<br>• Учет рабочего времени сотрудников<br>• Трансляция демороликов на телевизоры в торговых залах<br><br><strong>Установили в каждом магазине:</strong><br>• от 16 до 128 камер<br>• от 10 до 60 охранных датчиков<br>• от 1 до 15 км кабеля<br>• от 2 до 45 точек прохода</div>
+                </script>
+              </div>
+            </article>
+            <article class="portfolio__item">
+              <div class="portfolio__ico">
+                <img src="/assets/img/logo_eldorado.svg" alt="" />
+              </div>
+              <div class="portfolio__image" style="background-image: url('/assets/img/case_eldorado.webp')">
+                <a href="#" class="portfolio__link" data-portfolio-title="Торговая сеть «Эльдорадо»">Смотреть кейс</a>
+                <script type="text/template" class="portfolio-description">
+                  <div><br><strong>Объекты: </strong>60 магазинов<br><br><strong>Внедрили / Настроили:</strong><br>• Системы видеонаблюдения<br>• Системы противопожарной безопасности<br>• Система охранно-тревожной сигнализации<br>• Система контроля и управления доступом<br>• Беспроводная локальная сеть WI-FI<br>• Антикражные рамки<br>• Учет рабочего времени сотрудников<br>• Трансляция демороликов на телевизоры в торговых залах<br><br><strong>Установили в каждом магазине:</strong><br>• от 16 до 128 камер<br>• от 10 до 60 охранных датчиков<br>• от 1 до 15 км кабеля<br>• от 2 до 45 точек прохода</div>
+                </script>
+              </div>
+            </article>
+            <article class="portfolio__item">
+              <div class="portfolio__ico">
+                <img src="/assets/img/logo_eldorado.svg" alt="" />
+              </div>
+              <div class="portfolio__image" style="background-image: url('/assets/img/case_eldorado.webp')">
+                <a href="#" class="portfolio__link" data-portfolio-title="Торговая сеть «Эльдорадо»">Смотреть кейс</a>
+                <script type="text/template" class="portfolio-description">
+                  <div><br><strong>Объекты: </strong>60 магазинов<br><br><strong>Внедрили / Настроили:</strong><br>• Системы видеонаблюдения<br>• Системы противопожарной безопасности<br>• Система охранно-тревожной сигнализации<br>• Система контроля и управления доступом<br>• Беспроводная локальная сеть WI-FI<br>• Антикражные рамки<br>• Учет рабочего времени сотрудников<br>• Трансляция демороликов на телевизоры в торговых залах<br><br><strong>Установили в каждом магазине:</strong><br>• от 16 до 128 камер<br>• от 10 до 60 охранных датчиков<br>• от 1 до 15 км кабеля<br>• от 2 до 45 точек прохода</div>
+                </script>
               </div>
             </article>
           </div>
         </div>
       </section>
       <section>
-        <div class="license">
+        <div class="license" id="licenses">
           <div class="license__info">
             <h2 class="license__title">Сертификаты и лицензии</h2>
             <p class="license__text">Наша продукция сертифицирована</p>
@@ -305,7 +357,7 @@
         </div>
       </section>
       <section>
-        <div class="stepwork">
+        <div class="stepwork" id="steps">
           <div class="stepwork__items">
             <div class="stepwork__info">
               <h2 class="stepwork__title">Этапы работы</h2>
@@ -326,7 +378,7 @@
                   Оставьте заявку на этом сайте или позвоните нам: <br />
                   <a href="tel:+78462111846">8 (846) 211-18-46</a>
                 </p>
-                <button class="button-link flash stepwork__button">Оставить заявку</button>
+                <button class="button-link flash stepwork__button openModal">Оставить заявку</button>
               </div>
             </div>
             <div class="stepwork__item">
@@ -373,7 +425,7 @@
         </div>
       </section>
       <section>
-        <div class="contacts">
+        <div class="contacts" id="contacts">
           <div class="contacts__info">
             <h2 class="contacts__title">Наши контакты</h2>
             <p class="contacts__text">Свяжитесь с нами прямо сейчас!</p>
@@ -387,7 +439,7 @@
                   </div>
                   <div class="contacts__item-info">
                     <span class="contacts__label">Телефон:</span>
-                    <a href="tel:+78462111846" class="contacts__link">8 (846) 211-18-46</a>
+                    <a href="tel:+7(495)183-01-13" class="contacts__link">+7 (495) 183-01-13</a>
                   </div>
                 </div>
                 <div class="contacts__block-green"></div>
@@ -399,7 +451,7 @@
                   </div>
                   <div class="contacts__item-info">
                     <span class="contacts__label">Телефон:</span>
-                    <a href="tel:+78462111846" class="contacts__link">8 (846) 211-18-46</a>
+                    <a href="tel:+7(495)183-01-13" class="contacts__link">+7 (495) 183-01-13</a>
                   </div>
                 </div>
                 <div class="contacts__block-green"></div>
@@ -411,7 +463,7 @@
                   </div>
                   <div class="contacts__item-info">
                     <span class="contacts__label">Email:</span>
-                    <a href="mailto:info@avivatek.ru" class="contacts__link">info@avivatek.ru</a>
+                    <a href="mailto:info@avivatek.ru" class="contacts__link contacts__mail">info@avivatek.ru</a>
                   </div>
                 </div>
                 <div class="contacts__block-green"></div>
@@ -484,18 +536,18 @@
           <ul class="footer__contacts-list">
             <li class="footer__contacts-item">
               <span class="footer__contacts-icon"><img src="/assets/img/phone_gray.svg" alt="" /></span
-              ><a href="#">+7 (999) 999-99-99</a>
+              ><a href="#">+7 (495) 183-01-13</a>
             </li>
             <li class="footer__contacts-item">
-              <span class="footer__contacts-icon"><img src="/assets/img/mail_gray.svg" alt="" /></span
-              ><a href="#">info@avivatek.ru</a>
+              <span class="footer__contacts-icon "><img src="/assets/img/mail_gray.svg" alt="" /></span
+              ><a href="#" class="footer__mail">info@avivatek.ru</a>
             </li>
             <li class="footer__contacts-item">
               <span class="footer__contacts-icon"><img src="/assets/img/place_gray.svg" alt="" /></span
               ><a href="#">Москва, Мичуринский проспект 47</a>
             </li>
           </ul>
-          <button class="button-link footer__contacts-button">Заказать звонок</button>
+          <button class="button-link footer__contacts-button openModal">Заказать звонок</button>
           <div class="footer__contacts-info">
             <p class="footer__contacts-info-title">avivatek</p>
             <p class="footer__contacts-info-description">монтаж слаботочных систем</p>
@@ -506,9 +558,50 @@
           <a href="#">Политика конфиденциальности</a>
         </div>
       </div>
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <span class="close" id="closeModal">&times;</span>
+          <div class="contacts__form">
+            <div class="contacts__form-info">
+              <div class="contacts__form-info-img">
+                <img class="contacts__form-icon-img" src="/assets/img/contacts_manager.png.webp" alt="" />
+              </div>
+              <div class="contacts__form-info-text">
+                <h3 class="contacts__form-info-title">Оставить заявку</h3>
+                <p class="contacts__form-info-description">
+                  Наш менеджер свяжется с Вами <span>в течении 9 минут</span>
+                </p>
+              </div>
+            </div>
+            <form action="" class="contacts__form-content">
+              <input type="text" id="name" name="name" required placeholder="Введите Ваше имя" />
+
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                placeholder="+7 (999) 999-99-99"
+                data-mask-prefix="+7"
+                data-mask=" (000) 000 00 00"
+              />
+
+              <button type="submit" class="button-link contacts__form-button">Отправить</button>
+
+              <p class="contacts__form-agreement">
+                Нажимая на кнопку «Оставить заявку», вы даете <br />
+                <a href="#">согласие на обработку своих персональных данных</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="assets/js/index.js"></script>
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/portfolio.js"></script>
+    <script src="assets/js/videoPopup.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/masky.min.js"></script>
     <script>
@@ -533,9 +626,11 @@
             },
             960: {
               items: 3,
+              margin: 30,
             },
             1200: {
               items: 3,
+              margin: 30,
             },
           },
         });
@@ -549,5 +644,49 @@
         });
       });
     </script>
+    <script>
+      $(document).ready(function () {
+        document.querySelectorAll('.anchor-link').forEach(link => {
+          link.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+              const headerHeight = document.querySelector('header').offsetHeight;
+              const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+              const offsetPosition = targetPosition - headerHeight - 20; // Дополнительный отступ 20px
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+      
+      // Обновляем URL без перезагрузки страницы
+      history.pushState(null, null, targetId);
+    }
+  });
+});});
+    </script>
+    <!-- Попап для портфолио -->
+    <div class="popup" id="portfolio-popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <h3 class="popup__title" id="popup-title"></h3>
+          <div class="popup__description" id="popup-description"></div>
+          <!-- Сюда можно добавить другие блоки, например, для технологий -->
+          <button class="button-link popup-button flash openModal">Заказать звонок</button>
+        </div>
+      </div>
+    </div>
+    <!-- Попап для видео -->
+    <div class="popup" id="video-popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <div class="popup__description"></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
