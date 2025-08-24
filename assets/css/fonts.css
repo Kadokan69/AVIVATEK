@@ -1,19 +1,19 @@
-
 @font-face {
-	font-family: 'Rubik';
-	src: url('/assets/fonts/Rubik-VariableFont_wght.ttf') format('truetype');
-	font-weight: 100 900;
-	font-style: normal;
-	font-display: swap;
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
-	font-family: 'Rubik';
-	src: url('/assets/fonts/Rubik-Italic-VariableFont_wght.ttf') format('truetype');
-	font-weight: 100 900;
-	font-style: italic;
-	font-display: swap;
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
 }
 
 body {
-	font-family: 'Rubik', Arial, Helvetica, sans-serif;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-style: normal;
 }

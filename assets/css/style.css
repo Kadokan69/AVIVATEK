@@ -44,7 +44,7 @@ body {
   content: "";
   width: 15px;
   height: 15px;
-  background-image: url("/assets/img/phone_gray.svg");
+  background-image: url("../img/phone_gray.svg");
   background-position: center;
   background-size: cover;
 }
@@ -82,7 +82,7 @@ body {
   content: "";
   width: 15px;
   height: 15px;
-  background-image: url("/assets/img/mail_gray.svg");
+  background-image: url("../img/mail_gray.svg");
   background-position: center;
   background-size: cover;
 }
@@ -91,7 +91,7 @@ body {
   content: "";
   width: 15px;
   height: 15px;
-  background-image: url("/assets/img/phone_gray.svg");
+  background-image: url("../img/phone_gray.svg");
   background-position: center;
   background-size: cover;
 }
@@ -330,7 +330,7 @@ footer {
   width: 320px;
   height: 320px;
   display: flex;
-  background-image: url("/assets/img/photo_glavnaya.png");
+  background-image: url("../img/photo_glavnaya.png");
   background-size: cover;
   padding: 20px;
   border-radius: 15px;
@@ -430,7 +430,7 @@ footer {
   transform: translate(-50%, -50%);
 }
 .hero__button-arrow-img {
-  background-image: url(/assets/img/arrow_black.webp);
+  background-image: url(../img/arrow_black.webp);
   width: 30px;
   height: 36px;
   display: flex;
@@ -455,7 +455,7 @@ footer {
   height: 100%;
   max-width: 20px;
   max-height: 20px;
-  background-image: url(/assets/img/time.svg);
+  background-image: url(../img/time.svg);
   background-position: center;
   background-size: cover;
 }
@@ -694,7 +694,7 @@ footer {
   background-repeat: no-repeat;
   border-color: transparent;
   border-style: solid;
-  background-image: url("/assets/img/play.svg");
+  background-image: url("../img/play.svg");
 }
 .play-video__icon {
   position: absolute;
@@ -732,7 +732,7 @@ footer {
   content: "";
   width: 12px;
   height: 12px;
-  background-image: url("/assets/img/time.svg");
+  background-image: url("../img/time.svg");
   background-position: center;
   background-size: cover;
 }
@@ -750,7 +750,7 @@ footer {
   color: #fff;
 }
 .video__description-arrow {
-  background-image: url("/assets/img/video_arrow.webp");
+  background-image: url("../img/video_arrow.webp");
   width: 30px;
   height: 36px;
   display: flex;
