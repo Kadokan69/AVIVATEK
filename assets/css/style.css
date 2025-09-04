@@ -2669,7 +2669,7 @@ footer {
 .close {
   position: absolute;
   right: 20px;
-  top: 15px;
+  top: -30px;
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
