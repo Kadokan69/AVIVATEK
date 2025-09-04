@@ -5,7 +5,8 @@ export function Portfolio() {
   const popupDescription = document.getElementById("popup-description");
   const popupButton = portfolioPopup.querySelector(".openModal");
 
-  function openPopup(e) {
+  if(portfolioButtons.length && portfolioPopup) {
+    function openPopup(e) {
     e.preventDefault();
     const title = this.getAttribute("data-portfolio-title");
     // Ищем HTML-описание в карточке
@@ -47,4 +48,6 @@ export function Portfolio() {
     }
   });
   popupButton.addEventListener("click", closePopup);
+  }
+  
 };

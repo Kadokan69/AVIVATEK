@@ -46,17 +46,19 @@ export function mainJs() {
     }
   });
   const element = document.querySelector(".guarantee");
-  element.addEventListener("mousemove", function (e) {
-    const x = e.clientX;
-    const y = e.clientY;
-    const width = window.innerWidth;
-    const height = window.innerHeight;
-    const item = document.querySelector(".guarantee__img");
+  if (element) {
+    element.addEventListener("mousemove", function (e) {
+      const x = e.clientX;
+      const y = e.clientY;
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+      const item = document.querySelector(".guarantee__img");
 
-    if (window.innerWidth > 958) {
-      item.style.transform = `translate(calc(-50% - ${((x - width / 2) / 100) * 1.85}px), calc(-50% - ${
-        ((y - height / 2) / 100) * 1.85
-      }px))`;
-    }
-  });
+      if (window.innerWidth > 958) {
+        item.style.transform = `translate(calc(-50% - ${((x - width / 2) / 100) * 1.85}px), calc(-50% - ${
+          ((y - height / 2) / 100) * 1.85
+        }px))`;
+      }
+    });
+  }
 }
