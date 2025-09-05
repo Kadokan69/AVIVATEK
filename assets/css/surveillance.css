@@ -1016,7 +1016,7 @@
     grid-column: 3;
   }
   .surveillance .services__item-wrapper:nth-child(4n + 3),
-  .services__item-wrapper:nth-child(4n + 4) {
+  .surveillance .services__item-wrapper:nth-child(4n + 4) {
     grid-column: 2;
   }
 }
