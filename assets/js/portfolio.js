@@ -4,6 +4,7 @@ export function Portfolio() {
   const popupTitle = document.getElementById("popup-title");
   const popupDescription = document.getElementById("popup-description");
   const popupButton = portfolioPopup.querySelector(".openModal");
+  const popupClose = portfolioPopup.querySelector('.close')
 
   if(portfolioButtons.length && portfolioPopup) {
     function openPopup(e) {
@@ -42,6 +43,9 @@ export function Portfolio() {
   portfolioPopup.addEventListener("click", (e) => {
     if (e.target === portfolioPopup) closePopup();
   });
+   popupClose.addEventListener('click', (e)=>{
+      if(e.target === popupClose) closePopup();
+    })
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && portfolioPopup.classList.contains("active")) {
       closePopup();

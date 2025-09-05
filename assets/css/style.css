@@ -2769,9 +2769,15 @@ footer {
   font-family: "Rubik";
   line-height: 1.55;
 }
+.popup__description p{
+  margin-top: 15px;
+}
 .popup-button {
   max-width: 170px;
   margin-top: 20px;
+}
+.popup-close{
+  top: 10px;
 }
 
 #video-popup .popup__body {

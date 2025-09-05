@@ -30,6 +30,60 @@
   background-position: center;
 }
 
+.content__items {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr;
+}
+.content__item {
+  background-color: #fff;
+  border-color: transparent;
+  border-radius: 20px;
+  border-style: solid;
+  box-shadow: 0 0 3px 0 rgba(73, 73, 73, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  padding: 35px;
+  width: 100%;
+  justify-content: space-between;
+}
+.content__item-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+}
+.content__item-text {
+  color: #494949;
+  font-size: 14px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  overflow: hidden;
+}
+.content__link {
+  align-items: center;
+  background-color: #353535;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  height: 50px;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  width: 180px;
+  z-index: 1;
+}
+
 .service-info {
   background-color: #ffffff;
   padding: 40px 32px;
@@ -525,6 +579,15 @@
     max-width: 130px;
     max-height: 130px;
   }
+  .content__item-title {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .content__item-text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
   .service-info__title h2 {
     font-size: 25px;
   }
@@ -657,6 +720,20 @@
   .surveillance .hero__image-ico {
     top: 70px;
     left: 255px;
+  }
+  .content {
+    margin-top: 40px;
+  }
+  .content__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .content__item-title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .content__item-text {
+    font-size: 15px;
+    line-height: 23px;
   }
   .service-info__list {
     grid-template-columns: repeat(3, 150px);
@@ -973,6 +1050,9 @@
   }
   .surveillance .hero__image-ico-star span:last-child {
     font-size: 11px;
+  }
+  .content__items {
+    grid-template-columns: repeat(4, 1fr);
   }
   .service-info {
     grid-template-columns: 300px 1fr;

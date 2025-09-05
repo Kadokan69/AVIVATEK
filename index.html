@@ -124,7 +124,6 @@
       <section>
         <div class="services">
           <div class="services__item-wrapper">
-
             <div class="services__item services__item-video">
               <div class="services__info">
                 <h2 class="services__title">Видеонаблюдение</h2>
@@ -137,7 +136,6 @@
             </div>
           </div>
           <div class="services__item-wrapper">
-
             <div class="services__item">
               <div class="services__info">
                 <h2 class="services__title">Системы музыкальной трансляции</h2>
@@ -155,7 +153,6 @@
             </div>
           </div>
           <div class="services__item-wrapper">
-
             <div class="services__item">
               <div class="services__info">
                 <h2 class="services__title">Беспроводные сети</h2>
@@ -165,7 +162,6 @@
             </div>
           </div>
           <div class="services__item-wrapper">
-
             <div class="services__item">
               <div class="services__info">
                 <h2 class="services__title">Электросети</h2>
@@ -175,7 +171,6 @@
             </div>
           </div>
           <div class="services__item-wrapper">
-
             <div class="services__item services__item-cable">
               <div class="services__info">
                 <h2 class="services__title">Структурированные кабельные сети</h2>
@@ -188,13 +183,12 @@
             </div>
           </div>
           <div class="services__item-wrapper">
-
             <div class="services__item">
               <div class="services__info">
                 <h2 class="services__title">Контроль доступа</h2>
                 <p class="services__text">Производим монтаж систем контроля доступа и шлагбаумов любой сложности</p>
               </div>
-  
+
               <img src="assets/img/door.png" alt="Контроль доступа" class="services__image" />
               <a href="#" class="services__buttom">Узнать подробнее</a>
             </div>
@@ -615,7 +609,7 @@
     </footer>
     <script src="assets/js/index.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
-    <script  src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/masky.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
@@ -686,11 +680,22 @@
     <!-- Попап для портфолио -->
     <div class="popup" id="portfolio-popup">
       <div class="popup__body">
+        <span class="close popup-close" id="closeModal">×</span>
         <div class="popup__content">
           <h3 class="popup__title" id="popup-title"></h3>
           <div class="popup__description" id="popup-description"></div>
           <!-- Сюда можно добавить другие блоки, например, для технологий -->
           <button class="button-link popup-button flash openModal">Заказать звонок</button>
+        </div>
+      </div>
+    </div>
+    <!-- Попап для текста -->
+    <div class="popup" id="content-popup">
+      <div class="popup__body">
+        <span class="close popup-close" id="closeModal">×</span>
+        <div class="popup__content">
+          <h3 class="popup__title" id="popup-title-content"></h3>
+          <div class="popup__description" id="popup-description-content"></div>
         </div>
       </div>
     </div>
