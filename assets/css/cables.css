@@ -1,0 +1,67 @@
+.cables {
+  position: relative;
+  z-index: 1;
+  padding: 0px;
+  right: -45px;
+}
+.cables img {
+  object-fit: contain;
+}
+.cables .hero__image-ico {
+  z-index: -1;
+  top: auto;
+  left: 60px;
+  bottom: 85px;
+}
+@media (min-width: 479px) {
+  .cables .hero__image-ico {
+    top: 200px;
+    left: 85px;
+  }
+}
+
+@media (min-width: 639px) {
+  .cables img {
+    position: absolute;
+    right: 25px;
+    top: -35px;
+    transform: translateY(0%);
+    width: 100%;
+    max-width: 249px;
+  }
+  .cables .hero__image-ico {
+    bottom: 85px;
+    top: auto;
+    left: 35px;
+    z-index: -1;
+  }
+}
+@media (min-width: 959px) {
+  .cables img {
+    right: 45px;
+    top: -90px;
+    width: 100%;
+    max-width: 338px;
+  }
+  .cables .hero__image-ico {
+    left: 80px;
+    bottom: 0;
+    top: auto;
+  }
+}
+@media (min-width: 1199px) {
+  .surveillance .cables {
+    top: auto;
+    bottom: -180px;
+  }
+  .cables img {
+    top: auto;
+    bottom: 0;
+    max-width: 365px;
+  }
+  .cables .hero__image-ico {
+    right: auto;
+    top: 120px;
+    left: 40px;
+  }
+}

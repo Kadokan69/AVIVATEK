@@ -1,0 +1,72 @@
+.audio {
+  position: relative;
+  z-index: 1;
+  padding: 0px;
+  right: -40px;
+  bottom: -20px;
+  top: auto;
+}
+.audio img {
+  object-fit: contain;
+}
+.audio .hero__image-ico {
+  z-index: -1;
+  top: 125px;
+  left: 55px;
+  bottom: auto;
+}
+@media (min-width: 479px) {
+  .audio .hero__image-ico {
+    top: 210px;
+    left: 80px;
+  }
+}
+
+@media (min-width: 639px) {
+  .surveillance .audio {
+    z-index: 10;
+  }
+  .audio img {
+    position: absolute;
+    right: -225px;
+    top: auto;
+    width: 464px;
+    bottom: 10px;
+  }
+  .audio .hero__image-ico {
+    bottom: 100px;
+    top: auto;
+    right: 45px;
+    left: auto;
+  }
+}
+@media (min-width: 959px) {
+  .audio img {
+    width: 577px;
+    right: -100px;
+    top: auto;
+    bottom: -85px;
+  }
+  .audio .hero__image-ico {
+    left: 85px;
+    bottom: auto;
+    top: 180px;
+  }
+}
+@media (min-width: 1199px) {
+  .surveillance .audio {
+    top: auto;
+    bottom: -180px;
+  }
+  .audio img {
+    top: auto;
+    bottom: 0;
+    width: 626px;
+  }
+  .audio .hero__image-ico {
+    top: auto;
+    left: 40px;
+    right: auto;
+    bottom: 70px;
+  }
+}

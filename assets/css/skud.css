@@ -1,0 +1,69 @@
+.skud {
+  position: relative;
+  z-index: 10;
+  padding: 0px;
+}
+.skud img {
+  object-fit: contain;
+}
+.skud .hero__image-ico {
+  z-index: -1;
+  top: 10px;
+  left: 205px;
+}
+@media (min-width: 479px) {
+  .skud img {
+    position: absolute;
+    right: -35%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .skud .hero__image-ico {
+    top: 145px;
+    left: 140px;
+  }
+}
+
+@media (min-width: 639px) {
+  .skud {
+    position: relative;
+    z-index: 10;
+    padding: 0px;
+  }
+  .skud img {
+    position: absolute;
+    right: -75%;
+    top: -80px;
+    transform: translateY(0%);
+    width: 150%;
+  }
+
+  .skud .hero__image-ico {
+    bottom: 140px;
+    top: auto;
+    left: 115px;
+    z-index: -1;
+  }
+}
+@media (min-width: 959px) {
+  .skud img {
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+  .skud .hero__image-ico {
+    left: 300px;
+    bottom: auto;
+    top: -20px;
+  }
+}
+@media (min-width: 1199px) {
+  .skud img {
+    top: auto;
+    bottom: 0;
+  }
+  .skud .hero__image-ico {
+    right: -10px;
+    top: 10px;
+  }
+}

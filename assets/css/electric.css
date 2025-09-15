@@ -1,0 +1,69 @@
+.electric {
+  position: relative;
+  z-index: 1;
+  padding: 0px;
+  right: -35px;
+  bottom: -50px;
+  top: auto;
+}
+.electric img {
+  object-fit: contain;
+}
+.electric .hero__image-ico {
+  z-index: -1;
+  top: 60px;
+  left: 60px;
+  bottom: auto;
+}
+@media (min-width: 479px) {
+  .electric .hero__image-ico {
+    top: 60px;
+    left: 60px;
+  }
+}
+
+@media (min-width: 639px) {
+  .surveillance .electric {
+    z-index: 10;
+  }
+  .electric img {
+    position: absolute;
+    right: -100px;
+    top: auto;
+    width: 425px;
+    bottom: 40px;
+  }
+  .electric .hero__image-ico {
+    display: none;
+  }
+}
+@media (min-width: 959px) {
+  .electric img {
+    width: 492px;
+    right: 0;
+    top: auto;
+    bottom: -100px;
+  }
+  .electric .hero__image-ico {
+    left: 65px;
+    bottom: auto;
+    top: 30px;
+    display: block;
+  }
+}
+@media (min-width: 1199px) {
+  .surveillance .electric {
+    top: auto;
+    bottom: -180px;
+  }
+  .electric img {
+    top: auto;
+    bottom: 0;
+    width: 538px;
+  }
+  .electric .hero__image-ico {
+    top: 0px;
+    left: 10px;
+    right: auto;
+  }
+}

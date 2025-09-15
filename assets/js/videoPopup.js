@@ -2,6 +2,7 @@ export function Video() {
   const videoPopupContainer = document.getElementById("video-popup");
   const popupDescription = videoPopupContainer.querySelector(".popup__description");
   const videoPlay = document.querySelector(".play-video");
+  const popupClose = videoPopupContainer.querySelector('.close')
   if (videoPopupContainer && videoPlay) {
     function openPopup(e) {
       e.preventDefault();
@@ -26,6 +27,7 @@ export function Video() {
     }
 
     videoPlay.addEventListener("click", openPopup);
+    popupClose.addEventListener('click', closePopup)
 
     videoPopupContainer.addEventListener("click", (e) => {
       if (e.target === videoPopupContainer) closePopup();

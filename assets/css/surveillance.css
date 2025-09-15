@@ -1,3 +1,6 @@
+.surveillance .hero {
+  overflow: hidden;
+}
 .surveillance .hero__image-ico-star {
   display: flex;
   align-items: center;
@@ -628,6 +631,7 @@
     max-width: 130px;
     max-height: 130px;
   }
+
   .content__item-title {
     font-size: 22px;
     line-height: 22px;
@@ -756,20 +760,26 @@
 }
 
 @media (min-width: 639px) {
+  .surveillance .hero {
+    padding-bottom: 100px;
+  }
   .surveillance .hero__image {
     position: relative;
     top: 110px;
-    z-index: 1;
+    z-index: 10;
   }
-  .hero__text {
+  .surveillance .hero__text {
     gap: 15px;
     margin-top: 5px;
     width: 145%;
   }
   .surveillance .hero__image-ico {
-    top: 70px;
-    left: 255px;
+    bottom: auto;
+    left: 250px;
+    top: 60px;
+    z-index: 1;
   }
+
   .content {
     margin-top: 40px;
   }
@@ -777,7 +787,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .content__item-title {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 20px;
   }
   .content__item-text {
@@ -855,12 +865,7 @@
     z-index: 2;
     grid-column: 1;
   }
-  .surveillance .hero__image-ico {
-    bottom: 0;
-    top: auto;
-    left: 185px;
-    z-index: 1;
-  }
+
   .service__form-item-title-h2 {
     line-height: 39px;
     font-size: 30px;
@@ -895,7 +900,7 @@
     grid-column: auto;
   }
   .surveillance .services__item {
-    padding: 30px 40px;
+    padding: 30px;
   }
   .surveillance .services__title {
     font-size: 20px;
@@ -925,6 +930,10 @@
     width: 100%;
     padding: 0;
   }
+  .surveillance .hero__image-ico {
+    left: 160px;
+  }
+
   .service-info {
     display: grid;
     grid-template-columns: 260px 1fr;
@@ -1078,9 +1087,7 @@
   .service__form-item-title-h2 {
     line-height: 51px;
   }
-  .surveillance .hero__image-ico {
-    left: 160px;
-  }
+
   .service__form-item-description {
     width: 240px;
   }
@@ -1126,6 +1133,7 @@
   .surveillance .hero__image-ico-star span:last-child {
     font-size: 11px;
   }
+
   .content__items {
     grid-template-columns: repeat(4, 1fr);
   }

@@ -1,0 +1,69 @@
+.wi-fi {
+  position: relative;
+  z-index: 1;
+  padding: 0px;
+  right: -45px;
+}
+.wi-fi img {
+  object-fit: contain;
+  width: 803px;
+}
+.wi-fi .hero__image-ico {
+  z-index: -1;
+  top: 0px;
+  left: 60px;
+  bottom: auto;
+}
+@media (min-width: 479px) {
+  .wi-fi .hero__image-ico {
+    top: 60px;
+    left: 60px;
+  }
+}
+
+@media (min-width: 639px) {
+  .surveillance .wi-fi {
+    z-index: 10;
+  }
+  .wi-fi img {
+    position: absolute;
+    right: -255%;
+    top: -35px;
+    width: 1160px;
+  }
+  .wi-fi .hero__image-ico {
+    bottom: auto;
+    top: -95px;
+    left: 185px;
+    z-index: -1;
+  }
+}
+@media (min-width: 959px) {
+  .wi-fi img {
+    width: 1453px;
+    right: -210%;
+    top: auto;
+    bottom: -70px;
+  }
+  .wi-fi .hero__image-ico {
+    left: 245px;
+    bottom: auto;
+    top: -70px;
+  }
+}
+@media (min-width: 1199px) {
+  .surveillance .wi-fi {
+    top: auto;
+    bottom: -180px;
+  }
+  .wi-fi img {
+    top: auto;
+    bottom: 0;
+    width: 1527px;
+  }
+  .wi-fi .hero__image-ico {
+    top: -140px;
+    left: auto;
+    right: 0px;
+  }
+}
